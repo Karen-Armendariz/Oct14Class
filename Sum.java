@@ -20,14 +20,12 @@ public class Sum
                 //num1 cannot go over num2
                 //as long as num1 <=num2
 
-                for (int i=0; i<=num2; i++) // i=0, 0<=4.5.
+                for (int i = 0; i <= num2 && num1< num2; i++) // i=0, 0<=4.5.
                 {
-                    if(num1<=num2)
-                    {
-                        sum += num1; //add 1.1 to sum.   sum = 0+1.1 = 1.1, then i=1 which is <=1.1 so 1.1+1=2.1.
-                        num1++;     // add 1.1 to sum 1.1, sum=2.1
-                    }
+                    sum += num1; //add 1.1 to sum.   sum = 0+1.1 = 1.1, then i=1 which is <=1.1 so 1.1+1=2.1.
+                    num1++;     // add 1.1 to sum 1.1, sum=2.1
+                    
                 }
-                return sum;
+                return sum + num2;
             }
 }
